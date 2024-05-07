@@ -1,0 +1,1 @@
+﻿#c::Run "https://www.baidu.com"
