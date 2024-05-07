@@ -97,12 +97,16 @@
 ; 尝试了~` & 4 为End，但是这样子的话，就会输入 ` 了。
 ; 尝试了 !` & 1 为Home，但是程序报错
 
+; 有时手不想离开键盘，但是鼠标不得不点一下，于是作此键。
 ^!#j::{
     Click
 }
-; 这个方法没办法一次呼出Everything
-^!#f::{
-    Send "{Ctrl down}{Ctrl up}{Ctrl down}{Ctrl up}"
-    SendText "Everything.exe"
-    Send "{Enter}"
-}
+
+; TODO 目的是，按两下ctrl呼出Listary，然后启动Everything。
+; 但是这个脚本没有成功实现目的，目前还不知道原因。
+; 以后随着对AHK的了解加深，再回来解决。
+; ^!#e::{
+;     Send "{Ctrl down}{Ctrl up}{Ctrl down}{Ctrl up}"
+;     SendText "Everything.exe"
+;     Send "{Enter}"
+; }
