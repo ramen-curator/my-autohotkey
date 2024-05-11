@@ -14,7 +14,7 @@
     #+i::Send "{End}"
     #+o::Send "{PgUp}"
     #+p::Send "{PgDn}"
-    #+'::Send "{Del}"
+    #+x::Send "{Del}"
     ; ^0::Send "{Home}"
     ; ^!k::Send "{PgUp}"
     ; ^o::Send "{End}{Enter}"
