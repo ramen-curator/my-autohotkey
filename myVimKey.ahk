@@ -7,11 +7,23 @@
 ;但是，还是有点儿用处。先凑合着用好了。
 ; #HotIf (A_Cursor == "IBeam" || CaretGetPos(&x, &y) && x >= 100)
     #+j::Send "{Down}"
-    #+h::Send "{Left}"
     #+k::Send "{Up}"
+    #+h::Send "{Left}"
     #+l::Send "{Right}"
+    ^#+h::Send "{Ctrl down}{Left}{Ctrl up}"
+    ^#+l::Send "{Ctrl down}{Right}{Ctrl up}"
+    !#+h::Send "{Shift down}{Left}{Shift up}"
+    !#+l::Send "{Shift down}{Right}{Shift up}"
+    ^!#+h::Send "{Ctrl down}{Shift down}{Left}{Shift up}{Ctrl up}"
+    ^!#+l::Send "{Ctrl down}{Shift down}{Right}{Shift up}{Ctrl up}"
+
     #+u::Send "{Home}"
     #+i::Send "{End}"
+    !#+u::Send "{Shift down}{Home}{Shift up}"
+    !#+I::Send "{Shift down}{End}{Shift up}"
+    ^!#+u::Send "{Ctrl down}{Shift down}{Home}{Shift up}{Ctrl up}"
+    ^!#+I::Send "{Ctrl down}{Shift down}{End}{Shift up}{Ctrl up}"
+
     #+o::Send "{PgUp}"
     #+p::Send "{PgDn}"
     #+x::Send "{Del}"
