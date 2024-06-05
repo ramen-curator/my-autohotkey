@@ -24,8 +24,8 @@
 !#+I:: Send "{Shift down}{End}{Shift up}"
 ^!#+u:: Send "{Ctrl down}{Shift down}{Home}{Shift up}{Ctrl up}"
 ^!#+I:: Send "{Ctrl down}{Shift down}{End}{Shift up}{Ctrl up}"
-^!#u:: Send "{Ctrl down}{Home}{Ctrl up}"
-^!#I:: Send "{Ctrl down}{End}{Ctrl up}"
+^#+u:: Send "{Ctrl down}{Home}{Ctrl up}"
+^#+I:: Send "{Ctrl down}{End}{Ctrl up}"
 
 #+o:: Send "{PgUp}"
 #+p:: Send "{PgDn}"
