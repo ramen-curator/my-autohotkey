@@ -27,3 +27,8 @@
 ;     SendText "Everything.exe"
 ;     Send "{Enter}"
 ; }
+
+; ctrl + 空格键，触发回车键。方便左手键盘，右手鼠标。
+^Space::{
+    Send "{Enter}"
+}
