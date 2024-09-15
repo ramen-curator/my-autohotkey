@@ -29,8 +29,11 @@
 
 #+o:: Send "{PgUp}"
 #+p:: Send "{PgDn}"
-#+x:: Send "{Del}"
-#+z:: Send "{Backspace}"
+
+;#+x:: Send "{Del}"
+;#+z:: Send "{Backspace}"
+#+x:: Send "{Backspace}"
+
 ; ^0::Send "{Home}"
 ; ^!k::Send "{PgUp}"
 ; ^o::Send "{End}{Enter}"
