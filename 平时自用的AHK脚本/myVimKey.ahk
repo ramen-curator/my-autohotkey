@@ -33,6 +33,7 @@
 ;#+x:: Send "{Del}"
 ;#+z:: Send "{Backspace}"
 #+x:: Send "{Backspace}"
+^#+x:: Send "{Del}"
 
 ; ^0::Send "{Home}"
 ; ^!k::Send "{PgUp}"
